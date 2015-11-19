@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   private
     def auth_token
+      request.headers['Auth-Token']
     end
 
     def current_user
